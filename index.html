@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athi Sivaram S - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-2xl bg-gray-900/80 border-b border-gray-800/50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-accent">
+                    <span class="font-mono">&lt;</span>Athi<span class="font-mono">/&gt;</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link font-medium">Home</a>
+                    <a href="#about" class="nav-link font-medium">About</a>
+                    <a href="#experience" class="nav-link font-medium">Experience</a>
+                    <a href="#projects" class="nav-link font-medium">Projects</a>
+                    <a href="#contact" class="nav-link font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="nav-link font-medium">Home</a>
+                    <a href="#about" class="nav-link font-medium">About</a>
+                    <a href="#experience" class="nav-link font-medium">Experience</a>
+                    <a href="#projects" class="nav-link font-medium">Projects</a>
+                    <a href="#contact" class="nav-link font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden">
+        <div class="parallax-bg absolute inset-0"></div>
+
+        <!-- Floating tech icons -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div
+                class="absolute top-20 left-20 w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white floating">
+                <i class="fab fa-react text-2xl"></i>
+            </div>
+            <div
+                class="absolute top-40 right-20 w-16 h-16 rounded-full bg-gradient-to-r from-green-500 to-blue-500 flex items-center justify-center text-white floating-delayed">
+                <i class="fab fa-php text-2xl"></i>
+            </div>
+            <div
+                class="absolute bottom-40 left-40 w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white floating">
+                <i class="fab fa-js-square text-2xl"></i>
+            </div>
+            <div
+                class="absolute bottom-20 right-40 w-16 h-16 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center text-white floating-delayed">
+                <i class="fas fa-database text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left side - Text content -->
+                <div class="fade-in">
+                    <div class="mb-6">
+                        <span class="text-lg font-mono text-gray-400">Hello World! I'm</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                        <span class="gradient-accent">Athi Sivaram S</span>
+                    </h1>
+                    <div class="text-2xl md:text-3xl mb-8 font-semibold">
+                        <span id="typing-text" class="typing-cursor">Full Stack Developer</span>
+                    </div>
+                    <p class="text-lg mb-12 max-w-2xl text-gray-300 leading-relaxed">
+                        I craft <span class="gradient-accent font-semibold">digital experiences</span> that bridge
+                        innovative design
+                        with powerful functionality. Specialized in full-stack development with a passion for
+                        <span class="gradient-accent font-semibold">clean code</span> and <span
+                            class="gradient-accent font-semibold">seamless user experiences</span>.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a href="#projects"
+                            class="group relative px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full font-semibold text-white shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 transform hover:scale-105 overflow-hidden">
+                            <span class="relative z-10">View My Work</span>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </a>
+                        <a href="#contact"
+                            class="px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-full font-semibold hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right side - Code window -->
+                <div class="slide-in-right">
+                    <div class="code-window rounded-2xl p-6 shadow-2xl">
+                        <div class="flex items-center mb-4">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="ml-auto text-sm text-gray-400 font-mono">portfolio.js</div>
+                        </div>
+                        <div class="font-mono text-sm space-y-2" id="code-animation">
+                            <div class="code-line text-purple-400">const developer = {</div>
+                            <div class="code-line text-blue-400 ml-4">name: <span class="text-green-400">"Athi Sivaram
+                                    S"</span>,</div>
+                            <div class="code-line text-blue-400 ml-4">role: <span class="text-green-400">"Full Stack
+                                    Developer"</span>,</div>
+                            <div class="code-line text-blue-400 ml-4">experience: <span
+                                    class="text-yellow-400">3</span>,</div>
+                            <div class="code-line text-blue-400 ml-4">skills: [</div>
+                            <div class="code-line text-green-400 ml-8">"PHP", "JavaScript", "React",</div>
+                            <div class="code-line text-green-400 ml-8">"CodeIgniter", "MySQL", "API Integration"</div>
+                            <div class="code-line text-blue-400 ml-4">],</div>
+                            <div class="code-line text-blue-400 ml-4">passion: <span class="text-green-400">"Building
+                                    amazing web experiences"</span></div>
+                            <div class="code-line text-purple-400">};</div>
+                            <div class="code-line text-cyan-400">console.log(<span class="text-green-400">"Let's build
+                                    something great!"</span>);</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-cyan-400 text-2xl">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section> <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800/50 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-black mb-6">
+                    About <span class="gradient-accent">Me</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Passionate about creating digital solutions that make a difference
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left side - Professional Image -->
+                <div class="slide-in-left">
+                    <div class="relative">
+                        <div class="profile-image w-96 h-96 mx-auto">
+                            <div class="w-full h-full rounded-full bg-gray-700 overflow-hidden">
+                                <img src="https://public.youware.com/users-website-assets/prod/d2ea81c6-05f8-4e4a-9557-73a1d5964792/08386a1e42c9488691fe8c5dc9dcfa0a.jpg"
+                                    alt="Athi Sivaram - Developer Workspace" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <!-- Floating elements -->
+                        <div
+                            class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full flex items-center justify-center floating">
+                            <i class="fas fa-code text-white text-2xl"></i>
+                        </div>
+                        <div
+                            class="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center floating-delayed">
+                            <i class="fas fa-laptop-code text-white text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side - Content -->
+                <div class="slide-in-right">
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold mb-6">
+                            Full Stack Developer & <span class="gradient-accent">Tech Innovator</span>
+                        </h3>
+
+                        <div class="space-y-4 text-lg text-gray-300 leading-relaxed">
+                            <p>
+                                🚀 <strong class="text-white">3+ years</strong> of hands-on experience building scalable
+                                web and mobile applications
+                                that serve thousands of users daily.
+                            </p>
+                            <p>
+                                💡 Specialized in <strong class="text-cyan-400">PHP ecosystems</strong>, modern <strong
+                                    class="text-cyan-400">JavaScript frameworks</strong>,
+                                and <strong class="text-cyan-400">database optimization</strong> with a track record of
+                                improving application performance by 40%.
+                            </p>
+                            <p>
+                                ⚡ Passionate about <strong class="text-white">clean architecture</strong>, <strong
+                                    class="text-white">API design</strong>,
+                                and creating seamless user experiences that convert visitors into engaged users.
+                            </p>
+                            <p>
+                                🎯 Currently working at <strong class="text-purple-400">Raspberry Infosystem</strong>,
+                                leading full-stack development
+                                of enterprise-grade hotel management and inventory systems.
+                            </p>
+                        </div>
+
+                        <!-- Skills highlights -->
+                        <div class="grid grid-cols-2 gap-4 mt-8">
+                            <div class="card-glass p-4 rounded-xl text-center">
+                                <div class="text-3xl font-black stats-number mb-2">15+</div>
+                                <div class="text-gray-300 font-medium">Projects Delivered</div>
+                            </div>
+                            <div class="card-glass p-4 rounded-xl text-center">
+                                <div class="text-3xl font-black stats-number mb-2">3+</div>
+                                <div class="text-gray-300 font-medium">Years Experience</div>
+                            </div>
+                            <div class="card-glass p-4 rounded-xl text-center">
+                                <div class="text-3xl font-black stats-number mb-2">100%</div>
+                                <div class="text-gray-300 font-medium">Client Satisfaction</div>
+                            </div>
+                            <div class="card-glass p-4 rounded-xl text-center">
+                                <div class="text-3xl font-black stats-number mb-2">24/7</div>
+                                <div class="text-gray-300 font-medium">Learning Mindset</div>
+                            </div>
+                        </div>
+
+                        <!-- Call to action -->
+                        <div class="mt-8">
+                            <a href="#projects"
+                                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 transform hover:scale-105">
+                                <span>Explore My Work</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-900 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-black mb-6">
+                    Skills & <span class="gradient-accent">Technologies</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Mastery across the full technology stack with continuous learning
+                </p>
+            </div>
+
+            <!-- Tech Stack Visualization -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <!-- Frontend Skills -->
+                <div class="fade-in card-glass p-8 rounded-2xl relative overflow-hidden group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="text-center mb-8">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl text-white">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold gradient-accent">Frontend Mastery</h3>
+                            <p class="text-gray-400 mt-2">User Interface & Experience</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fab fa-html5 text-orange-500 mr-3 text-xl"></i>
+                                        HTML/CSS
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">95%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fab fa-js-square text-yellow-500 mr-3 text-xl"></i>
+                                        JavaScript
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">90%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fab fa-react text-blue-400 mr-3 text-xl"></i>
+                                        React
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fab fa-bootstrap text-purple-500 mr-3 text-xl"></i>
+                                        Bootstrap
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">90%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="fade-in card-glass p-8 rounded-2xl relative overflow-hidden group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-teal-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="text-center mb-8">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center text-3xl text-white">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold gradient-accent">Backend Power</h3>
+                            <p class="text-gray-400 mt-2">Server & Database Logic</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fab fa-php text-indigo-400 mr-3 text-xl"></i>
+                                        PHP
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">92%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 92%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fas fa-fire text-red-500 mr-3 text-xl"></i>
+                                        CodeIgniter
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">88%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 88%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fas fa-database text-orange-400 mr-3 text-xl"></i>
+                                        MySQL
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fas fa-plug text-green-400 mr-3 text-xl"></i>
+                                        API Integration
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">90%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile & Tools Skills -->
+                <div class="fade-in card-glass p-8 rounded-2xl relative overflow-hidden group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-rose-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="text-center mb-8">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center text-3xl text-white">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold gradient-accent">Mobile & DevOps</h3>
+                            <p class="text-gray-400 mt-2">Cross-platform Development</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fab fa-react text-blue-400 mr-3 text-xl"></i>
+                                        React Native
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">80%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fab fa-git-alt text-orange-500 mr-3 text-xl"></i>
+                                        Git/GitHub
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fas fa-credit-card text-green-400 mr-3 text-xl"></i>
+                                        Payment Gateways
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">88%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 88%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-white font-semibold flex items-center">
+                                        <i class="fab fa-aws text-yellow-500 mr-3 text-xl"></i>
+                                        Cloud Services
+                                    </span>
+                                    <span class="text-cyan-400 font-bold">75%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack Icons -->
+            <div class="fade-in text-center">
+                <h3 class="text-2xl font-bold mb-8 gradient-accent">Technologies I Work With</h3>
+                <div class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-white text-2xl hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white text-2xl hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center text-white text-2xl hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-2xl hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center text-white text-2xl hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center text-white text-2xl hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center text-white text-2xl hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white text-2xl hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-800/30 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-black mb-6">
+                    Professional <span class="gradient-accent">Journey</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Building innovative solutions with cutting-edge technologies
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <!-- Timeline -->
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div
+                        class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 timeline-line">
+                    </div>
+
+                    <!-- Experience Item -->
+                    <div class="fade-in mb-16 relative">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <!-- Timeline dot -->
+                            <div
+                                class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full border-4 border-gray-900 z-10">
+                            </div>
+
+                            <!-- Content -->
+                            <div class="w-full md:w-5/12 md:pr-8 ml-16 md:ml-0">
+                                <div class="card-glass p-8 rounded-2xl">
+                                    <div class="flex items-center mb-4">
+                                        <div
+                                            class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl flex items-center justify-center text-white text-2xl mr-4">
+                                            <i class="fas fa-briefcase"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-bold gradient-accent">Full Stack Developer</h3>
+                                            <p class="text-xl text-gray-300">Raspberry Infosystem</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-6">
+                                        <span
+                                            class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-400/20 to-purple-600/20 border border-cyan-400/30 rounded-full text-cyan-400 font-semibold">
+                                            <i class="fas fa-calendar-alt mr-2"></i>
+                                            February 2024 - Present
+                                        </span>
+                                    </div>
+
+                                    <div class="space-y-4 mb-6">
+                                        <div class="flex items-start">
+                                            <i class="fas fa-rocket text-cyan-400 mr-3 mt-1"></i>
+                                            <p class="text-gray-300">Architected and developed a comprehensive <strong
+                                                    class="text-white">Hotel Management System</strong> supporting
+                                                multi-property operations, real-time booking, and advanced reporting.
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-plug text-cyan-400 mr-3 mt-1"></i>
+                                            <p class="text-gray-300">Integrated <strong class="text-white">payment
+                                                    gateways</strong> and <strong class="text-white">third-party
+                                                    APIs</strong> for SMS/email notifications, reducing manual
+                                                processing by 70%.</p>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-code-branch text-cyan-400 mr-3 mt-1"></i>
+                                            <p class="text-gray-300">Led migration from <strong
+                                                    class="text-white">CodeIgniter 3 to 4</strong>, improving code
+                                                maintainability, security, and reducing load times by 35%.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">PHP</span>
+                                        <span
+                                            class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">CodeIgniter</span>
+                                        <span
+                                            class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                                        <span
+                                            class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                                        <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">API
+                                            Integration</span>
+                                        <span
+                                            class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">Payment
+                                            Gateways</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Image placeholder for larger screens -->
+                            <div class="hidden md:block w-2/12"></div>
+                            <div class="w-full md:w-5/12 mt-8 md:mt-0 md:pl-8">
+                                <div class="relative">
+                                    <div class="card-glass p-6 rounded-2xl">
+                                        <h4 class="text-lg font-semibold mb-4 gradient-accent">Key Achievements</h4>
+                                        <div class="space-y-3">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-gray-300">Performance Improvement</span>
+                                                <span class="text-cyan-400 font-bold">+35%</span>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-gray-300">Manual Process Reduction</span>
+                                                <span class="text-cyan-400 font-bold">-70%</span>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-gray-300">System Reliability</span>
+                                                <span class="text-cyan-400 font-bold">99.9%</span>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-gray-300">Code Coverage</span>
+                                                <span class="text-cyan-400 font-bold">85%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <div class="fade-in card-glass p-6 rounded-2xl text-center">
+                        <div
+                            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center text-white text-2xl">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">B.E Computer Science</h3>
+                        <p class="text-gray-400 mb-2">Rajalakshmi Engineering College</p>
+                        <p class="text-cyan-400 font-semibold">2018 - 2022</p>
+                    </div>
+
+                    <div class="fade-in card-glass p-6 rounded-2xl text-center">
+                        <div
+                            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-green-500 to-teal-600 rounded-xl flex items-center justify-center text-white text-2xl">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Frontend Development</h3>
+                        <p class="text-gray-400 mb-2">Besant Technologies</p>
+                        <p class="text-cyan-400 font-semibold">Professional Certification</p>
+                    </div>
+
+                    <div class="fade-in card-glass p-6 rounded-2xl text-center">
+                        <div
+                            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-white text-2xl">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Oracle SQL/PL-SQL</h3>
+                        <p class="text-gray-400 mb-2">Greens Technologies</p>
+                        <p class="text-cyan-400 font-semibold">Database Specialization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-black mb-6">
+                    Featured <span class="gradient-accent">Projects</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Transforming ideas into powerful digital solutions that drive business growth
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+                <!-- Featured Project 1 -->
+                <div class="fade-in project-card card-glass p-8 rounded-3xl relative overflow-hidden group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="mb-6">
+                            <div class="relative rounded-2xl overflow-hidden mb-6">
+                                <img src="https://public.youware.com/users-website-assets/prod/d2ea81c6-05f8-4e4a-9557-73a1d5964792/2f5e25c18aaf459ca6c33548d805cb82.jpeg"
+                                    alt="Hotel Management Dashboard" class="w-full h-64 object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
+                            </div>
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-bold gradient-accent">Hotel Management System</h3>
+                                <span class="text-sm text-cyan-400 font-semibold">2024</span>
+                            </div>
+                            <p class="text-gray-300 mb-6 leading-relaxed">
+                                Enterprise-grade hotel management platform featuring real-time booking engine,
+                                guest management, automated billing, comprehensive reporting, and multi-property
+                                support.
+                                Handles 1000+ daily bookings with 99.9% uptime.
+                            </p>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold mb-4 text-white">Key Features</h4>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="flex items-center text-sm text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Real-time Booking
+                                </div>
+                                <div class="flex items-center text-sm text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Payment Integration
+                                </div>
+                                <div class="flex items-center text-sm text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Guest Management
+                                </div>
+                                <div class="flex items-center text-sm text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Analytics Dashboard
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">PHP</span>
+                            <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">CodeIgniter
+                                4</span>
+                            <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                            <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                            <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">Payment
+                                Gateway</span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-400">
+                                <i class="fas fa-users mr-2"></i>1000+ Daily Users
+                            </div>
+                            <button
+                                class="px-6 py-3 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 transform hover:scale-105">
+                                <i class="fas fa-external-link-alt mr-2"></i>View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Project 2 -->
+                <div class="fade-in project-card card-glass p-8 rounded-3xl relative overflow-hidden group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-teal-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="mb-6">
+                            <div class="relative rounded-2xl overflow-hidden mb-6">
+                                <img src="https://public.youware.com/users-website-assets/prod/d2ea81c6-05f8-4e4a-9557-73a1d5964792/b5aa03de3505470a9bd4308264fb7393.jpg"
+                                    alt="Mobile App Interface" class="w-full h-64 object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
+                            </div>
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-bold gradient-accent">HR Management Mobile App</h3>
+                                <span class="text-sm text-cyan-400 font-semibold">2025</span>
+                            </div>
+                            <p class="text-gray-300 mb-6 leading-relaxed">
+                                Cross-platform mobile application built with React Native for comprehensive employee
+                                management.
+                                Features full CRUD operations, real-time synchronization, offline support, and intuitive
+                                user interface.
+                            </p>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold mb-4 text-white">Technical Highlights</h4>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="flex items-center text-sm text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Cross-platform
+                                </div>
+                                <div class="flex items-center text-sm text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Offline Support
+                                </div>
+                                <div class="flex items-center text-sm text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Real-time Sync
+                                </div>
+                                <div class="flex items-center text-sm text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Push Notifications
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">React
+                                Native</span>
+                            <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">Redux</span>
+                            <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">REST API</span>
+                            <span
+                                class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">AsyncStorage</span>
+                            <span class="project-tech-tag px-3 py-1 rounded-full text-sm font-medium">Push
+                                Notifications</span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-400">
+                                <i class="fas fa-mobile-alt mr-2"></i>iOS & Android
+                            </div>
+                            <button
+                                class="px-6 py-3 bg-gradient-to-r from-green-500 to-teal-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-green-400/50 transition-all duration-300 transform hover:scale-105">
+                                <i class="fas fa-external-link-alt mr-2"></i>View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Projects Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+                <!-- Project Card 3 -->
+                <div class="fade-in project-card card-glass p-6 rounded-2xl group">
+                    <div
+                        class="w-full h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center text-white text-3xl mb-4">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Payment Gateway Integration</h3>
+                    <p class="text-gray-400 text-sm mb-4">CCAvenue subscription system with secure tokenization</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-cyan-400">2024</span>
+                        <button
+                            class="text-sm px-4 py-2 border border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-colors">
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="fade-in project-card card-glass p-6 rounded-2xl group">
+                    <div
+                        class="w-full h-32 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-white text-3xl mb-4">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">SkyChannel OTA Platform</h3>
+                    <p class="text-gray-400 text-sm mb-4">Multi-channel booking management with API integrations</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-cyan-400">2025</span>
+                        <button
+                            class="text-sm px-4 py-2 border border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-colors">
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="fade-in project-card card-glass p-6 rounded-2xl group">
+                    <div
+                        class="w-full h-32 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center text-white text-3xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">HR Management System</h3>
+                    <p class="text-gray-400 text-sm mb-4">Complete payroll and employee lifecycle management</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-cyan-400">2025</span>
+                        <button
+                            class="text-sm px-4 py-2 border border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-colors">
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="fade-in project-card card-glass p-6 rounded-2xl group">
+                    <div
+                        class="w-full h-32 bg-gradient-to-br from-green-500 to-teal-600 rounded-xl flex items-center justify-center text-white text-3xl mb-4">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Asset Management</h3>
+                    <p class="text-gray-400 text-sm mb-4">Inventory tracking with real-time analytics</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-cyan-400">2024</span>
+                        <button
+                            class="text-sm px-4 py-2 border border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-colors">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg relative overflow-hidden">
+        <div class="parallax-bg absolute inset-0 opacity-50"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 text-white">
+                    Let's Build Something <span class="gradient-text">Amazing</span>
+                </h2>
+                <div class="w-32 h-1 bg-white mx-auto mb-6"></div>
+                <p class="text-xl text-white/80 max-w-3xl mx-auto">
+                    Ready to transform your ideas into powerful digital solutions? Let's discuss your next project.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+                <!-- Contact Info -->
+                <div class="fade-in">
+                    <div class="card-glass p-8 rounded-3xl">
+                        <h3 class="text-3xl font-bold text-white mb-8">Get In Touch</h3>
+
+                        <div class="space-y-8">
+                            <div class="flex items-center group">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-envelope text-white text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/60 text-sm font-medium">Email Address</p>
+                                    <a href="mailto:sivaramathi2001@gmail.com"
+                                        class="text-white text-lg font-semibold hover:text-cyan-400 transition-colors">
+                                        sivaramathi2001@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center group">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-phone text-white text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/60 text-sm font-medium">Phone Number</p>
+                                    <a href="tel:+916382834963"
+                                        class="text-white text-lg font-semibold hover:text-cyan-400 transition-colors">
+                                        +91 6382834963
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center group">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/60 text-sm font-medium">Location</p>
+                                    <p class="text-white text-lg font-semibold">Chennai, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-12">
+                            <h4 class="text-xl font-semibold text-white mb-6">Connect With Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/sivaram-athi" target="_blank"
+                                    class="w-14 h-14 bg-white/10 backdrop-blur-lg rounded-2xl flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-600 transition-all duration-300 transform hover:scale-110">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/athisivaram-s" target="_blank"
+                                    class="w-14 h-14 bg-white/10 backdrop-blur-lg rounded-2xl flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-600 transition-all duration-300 transform hover:scale-110">
+                                    <i class="fab fa-linkedin text-2xl"></i>
+                                </a>
+                                <a href="mailto:sivaramathi2001@gmail.com"
+                                    class="w-14 h-14 bg-white/10 backdrop-blur-lg rounded-2xl flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-600 transition-all duration-300 transform hover:scale-110">
+                                    <i class="fas fa-envelope text-2xl"></i>
+                                </a>
+                                <a href="tel:+916382834963"
+                                    class="w-14 h-14 bg-white/10 backdrop-blur-lg rounded-2xl flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-600 transition-all duration-300 transform hover:scale-110">
+                                    <i class="fas fa-phone text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Availability Status -->
+                        <div class="mt-8 p-4 bg-green-500/20 border border-green-500/30 rounded-2xl">
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
+                                <span class="text-green-400 font-semibold">Available for new projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="fade-in">
+                    <div class="card-glass p-8 rounded-3xl">
+                        <form class="space-y-6" id="contact-form">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-white font-medium mb-2">Your Name</label>
+                                    <input type="text" name="name" required
+                                        class="w-full px-4 py-4 bg-white/5 border border-white/20 rounded-2xl text-white placeholder-white/50 focus:outline-none focus:border-cyan-400 focus:bg-white/10 backdrop-blur-sm transition-all duration-300"
+                                        placeholder="Enter your name">
+                                </div>
+                                <div>
+                                    <label class="block text-white font-medium mb-2">Your Email</label>
+                                    <input type="email" name="email" required
+                                        class="w-full px-4 py-4 bg-white/5 border border-white/20 rounded-2xl text-white placeholder-white/50 focus:outline-none focus:border-cyan-400 focus:bg-white/10 backdrop-blur-sm transition-all duration-300"
+                                        placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-white font-medium mb-2">Project Details</label>
+                                <textarea rows="6" name="message" required
+                                    class="w-full px-4 py-4 bg-white/5 border border-white/20 rounded-2xl text-white placeholder-white/50 focus:outline-none focus:border-cyan-400 focus:bg-white/10 backdrop-blur-sm resize-none transition-all duration-300"
+                                    placeholder="Tell me about your project, timeline, and requirements..."></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-gradient-to-r from-cyan-400 to-purple-600 text-white font-semibold py-4 rounded-2xl hover:shadow-2xl hover:shadow-cyan-400/50 transition-all duration-300 transform hover:scale-105 relative overflow-hidden group">
+                                <span class="relative z-10 flex items-center justify-center">
+                                    <span id="submit-text">Send Message</span>
+                                    <i class="fas fa-paper-plane ml-2" id="submit-icon"></i>
+                                </span>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                </div>
+                            </button>
+                            <div style="opacity: 0;">
+                                <label class="block text-white font-medium mb-2">Project Type</label>
+                                <select name="project-type"
+                                    class="w-full px-4 py-4 bg-white/5 border border-white/20 rounded-2xl text-white focus:outline-none focus:border-cyan-400 focus:bg-white/10 backdrop-blur-sm transition-all duration-300">
+                                    <option value="">Select project type</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="mobile-app">Mobile App</option>
+                                    <option value="full-stack">Full Stack Solution</option>
+                                    <option value="api-integration">API Integration</option>
+                                    <option value="consultation">Technical Consultation</option>
+                                </select>
+                            </div>
+                            <!-- <div>
+                                <label class="block text-white font-medium mb-2">Budget Range</label>
+                                <select name="budget"
+                                    class="w-full px-4 py-4 bg-white/5 border border-white/20 rounded-2xl text-white focus:outline-none focus:border-cyan-400 focus:bg-white/10 backdrop-blur-sm transition-all duration-300">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-50k">$15,000 - $50,000</option>
+                                    <option value="50k-plus">$50,000+</option>
+                                </select>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="grid md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
+                <div class="fade-in text-center card-glass p-6 rounded-2xl">
+                    <div class="text-3xl font-black stats-number mb-2">15+</div>
+                    <div class="text-white/80">Projects Completed</div>
+                </div>
+                <div class="fade-in text-center card-glass p-6 rounded-2xl">
+                    <div class="text-3xl font-black stats-number mb-2">3+</div>
+                    <div class="text-white/80">Years Experience</div>
+                </div>
+                <div class="fade-in text-center card-glass p-6 rounded-2xl">
+                    <div class="text-3xl font-black stats-number mb-2">100%</div>
+                    <div class="text-white/80">Client Satisfaction</div>
+                </div>
+                <div class="fade-in text-center card-glass p-6 rounded-2xl">
+                    <div class="text-3xl font-black stats-number mb-2">24h</div>
+                    <div class="text-white/80">Response Time</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/90 backdrop-blur-lg py-12 border-t border-gray-800/50 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div>
+                    <div class="text-2xl font-bold gradient-accent mb-4">
+                        <span class="font-mono">&lt;</span>Athi<span class="font-mono">/&gt;</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Crafting digital experiences that bridge innovation with functionality.
+                        Let's build something amazing together.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <div class="flex flex-col space-y-2">
+                        <a href="#about" class="text-gray-400 hover:text-cyan-400 transition-colors">About</a>
+                        <a href="#experience" class="text-gray-400 hover:text-cyan-400 transition-colors">Experience</a>
+                        <a href="#projects" class="text-gray-400 hover:text-cyan-400 transition-colors">Projects</a>
+                        <a href="#contact" class="text-gray-400 hover:text-cyan-400 transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <h4 class="text-lg font-semibold text-white mb-4">Let's Connect</h4>
+                    <div class="flex justify-center md:justify-end space-x-4 mb-4">
+                        <a href="https://github.com/sivaram-athi" target="_blank"
+                            class="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-600 transition-all duration-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/athisivaram-s" target="_blank"
+                            class="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-600 transition-all duration-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        © 2025 Athi Sivaram S<br>
+                        Made with ❤️ using modern web technologies
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-top"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-2xl shadow-2xl hover:shadow-cyan-400/50 text-white opacity-0 pointer-events-none transition-all duration-300 z-50 hover:scale-110">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
